@@ -79,7 +79,7 @@ const Home = () => {
       </div>
       <div className="badge-container grow">
         <a
-          href="https://buildspace.so/builds/ai-writer" //fixme: change after you launch the extension
+          // href="https://buildspace.so/builds/ai-writer" //fixme: change after you launch the extension
           target="_blank"
           rel="noreferrer"
         >
