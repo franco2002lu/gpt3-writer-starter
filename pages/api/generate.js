@@ -6,9 +6,7 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-const basePromptPrefix = "Provide an in-depth itinerary in the form" +
-    " of a list for the location and duration entered below. Include the estimated time to complete each activity. " +
-    "Location and duration: ";
+const basePromptPrefix = "summarize the code below:\n";
 const generateAction = async (req, res) => {
     // Run first prompt
     console.log(`API: ${basePromptPrefix}${req.body.userInput}`)

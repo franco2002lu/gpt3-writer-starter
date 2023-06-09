@@ -36,21 +36,21 @@ const Home = () => {
   return (
     <div className="root">
       <Head>
-        <title>GPT-3 JourneyMaster</title>
+        <title>GPT-3 CodeTracer</title>
       </Head>
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>JourneyMaster</h1>
+            <h1>CodeTracer</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Input your destination and duration in the text box below.</h2>
+            <h2>Not sure what the code does? Insert it below!</h2>
           </div>
         </div>
         <div className="prompt-container">
             <textarea
                 className="prompt-box"
-                placeholder="start typing here"
+                placeholder="paste your code here."
                 value={userInput}
                 onChange={onUserChangedText}
             />
@@ -67,7 +67,7 @@ const Home = () => {
                 <div className="output">
                     <div className="output-header-container">
                         <div className="output-header">
-                            <h3>Your Personalized Itinerary:</h3>
+                            <h3>Summary of code:</h3>
                         </div>
                     </div>
                     <div className="output-content">
@@ -77,18 +77,18 @@ const Home = () => {
             )}
         </div>
       </div>
-      {/*<div className="badge-container grow">*/}
-      {/*  <a*/}
-      {/*    href="https://buildspace.so/builds/ai-writer"*/}
-      {/*    target="_blank"*/}
-      {/*    rel="noreferrer"*/}
-      {/*  >*/}
-      {/*    <div className="badge">*/}
-      {/*      <Image src={buildspaceLogo} alt="buildspace logo" />*/}
-      {/*      <p>build with buildspace</p>*/}
-      {/*    </div>*/}
-      {/*  </a>*/}
-      {/*</div>*/}
+      <div className="badge-container grow">
+        <a
+          href="https://buildspace.so/builds/ai-writer" //fixme: change after you launch the extension
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="badge">
+            {/*<Image src={buildspaceLogo} alt="buildspace logo" />*/}
+            <p>CodeTracer Chrome Extension</p>
+          </div>
+        </a>
+      </div>
     </div>
   );
 };
